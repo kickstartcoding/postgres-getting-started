@@ -73,6 +73,15 @@ Note: See bottom of this guide for an spreadsheet analogy.
   layout of your database. In Postgres, also it means a way for a database to
   further "group together" it's tables (more or less).
 
+* **Heroku** (the business) - a company that will run your HTTP server
+  application for you, and expose it to the web. They also offer free Postgres
+  servers, which is what we are using from them.
+
+* `heroku` (the CLI command) - A tool that Heroku the company has developed
+  which we will use for interacting with your Heroku account, including
+  creating new Postgres databases.
+
+
 # Guide
 
 Now that you know a little about Postgres, it's time to install the client on
