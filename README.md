@@ -166,7 +166,36 @@ SELECT * FROM people;
   `"Duck"`, and ID number `2`. Ensure it is added with `SELECT`.
 
 
+# Playing with test data
+
+Included in this repo is a SQL file that contains information on the 50 states
+in the USA, including Puerto Rico and District of Columbia.
+
+1. Copy & paste that SQL file into your window (or be clever and redirect it
+into the Postgres prompt using Bash).
+
+2. View the data:
+
+```sql
+SELECT * FROM states;
+```
+
+3. Try using `WHERE` in conjunction to `SELECT` to look for states with
+different characteristics (will have to Google for more information on
+`WHERE`). (e.g. Only mid-sized states, with population between 5 and 10
+million).
+
+4. Try using `ORDER BY` in conjunction to `SELECT` to sort the output by
+different orderings. (e.g. Sorted by population, least populated first)
+
+5. Try using `LIMIT` to only select the top state that matches a certain
+ordering and criteria. (e.g. only the most populous state that starts with the
+letter `M`).
+
 # Extra challenges
+
+* Look up remaining SQL commands. Get practice with all the different options
+  for `SELECT`, `INSERT`, `DELETE`, `UPDATE`.
 
 * If you have time, look up online tutorials on installing and running Postgres
   locally (as opposed to Heroku). This is something you may need to do at some
@@ -197,16 +226,4 @@ SELECT * FROM people;
 | table         | worksheet     |
 | column        | column        |
 | row           | row           |
-
-
-* Example of a `users` table, with an `id` column and `username` column:
-
-|      | users         |
-| ----:|---------------|
-| id   | username      |
-| `1`  | `morticia   ` |
-| `2`  | `gomez      ` |
-| `3`  | `unc_fester ` |
-| `4`  | `wednesday  ` |
-
 
