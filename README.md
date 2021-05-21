@@ -161,7 +161,7 @@ CREATE TABLE people (
 * Add data to a table
 
 ```sql
-INSERT INTO people (id, first_name, last_name)
+INSERT INTO people (idnum, first_name, last_name)
 VALUES (1, 'Jane', 'Hacker');
 ```
 
